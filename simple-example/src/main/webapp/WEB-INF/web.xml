@@ -1,8 +1,9 @@
-<!DOCTYPE web-app PUBLIC
-        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- make sure your web.xml contains these xmlns declarations and doesn't use DTD anymore -->
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <display-name>Spring Security Facelets Taglib Example</display-name>
     <description>spring-security-facelets-taglib-example</description>
 
@@ -14,7 +15,6 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            /WEB-INF/security-context.xml
             /WEB-INF/applicationContext.xml
         </param-value>
     </context-param>
@@ -35,26 +35,18 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-
-       <!--^M
-      - Publishes events for session creation and destruction through the application^M
-      - context. Optional unless concurrent session control is being used.^M
-      -->
-    <listener>
-      <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
-    </listener>
 
     <listener>
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
 
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 
-    <!--<listener>-->
-        <!--<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>-->
-    <!--</listener>-->
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
 
 
     <servlet>
