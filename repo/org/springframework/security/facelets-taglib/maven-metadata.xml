@@ -7,7 +7,9 @@
     <versions>
       <version>0.1</version>
       <version>0.1_jsf20</version>
+      <version>0.2_jsf-2.0_spring-2</version>
+      <version>0.2_jsf-2.0_spring-3</version>
     </versions>
-    <lastUpdated>20090807154509</lastUpdated>
+    <lastUpdated>20090908141539</lastUpdated>
   </versioning>
 </metadata>
