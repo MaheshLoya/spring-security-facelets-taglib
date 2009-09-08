@@ -14,6 +14,18 @@
 
             <subsection name="Latest news">
                 <ul>
+                    <li>2009-09-08
+                        <br/>
+                        We now have our own
+                        <a href="http://groups.google.com/group/spring-security-taglib" target="_blank">Google Group</a>
+                        to provide you with support and announcements.
+                    </li>
+
+
+                    <li>2009-09-08
+                        <br/>
+                        Updated Project to allow the usage of JSF 2.0 and Spring 3/ Spring-Security 3
+                    </li>
                     <li>2009-08-07
                         <br/>
                         Added the sample-webapp for jsf 2.0
@@ -56,55 +68,131 @@
                 <strong>please give your improvements back!</strong>
             </subsection>
 
-            <subsection name="Manual Download JSF 1.2">
+
+            <subsection name="Manual Download for JSF 1.2 (Facelets) and Spring 2 / Spring-Security 2">
+                Code:
+
                 <ul>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1/facelets-taglib-0.1.jar">
-                            facelets-taglib-0.1.jar
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1/facelets-taglib-0.1.pom">
-                            facelets-taglib-0.1.pom
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-1.2-spring-2/facelets-taglib-0.2_jsf-1.2-spring-2.jar">
+                            facelets-taglib-0.2_jsf-1.2-spring-2.jar
                         </a>
                     </li>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1/facelets-taglib-0.1-sources.jar">
-                            facelets-taglib-0.1-sources.jar
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-1.2-spring-2/facelets-taglib-0.2_jsf-1.2-spring-2-sources.jar">
+                            facelets-taglib-0.2_jsf-1.2-spring-2-sources.jar
                         </a>
                     </li>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1/facelets-taglib-0.1-javadoc.jar">
-                            facelets-taglib-0.1-javadoc.jar
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-1.2-spring-2/facelets-taglib-0.2_jsf-1.2-spring-2-javadoc.jar">
+                            facelets-taglib-0.2_jsf-1.2-spring-2-javadoc.jar
+                        </a>
+                    </li>
+                </ul>
+                Example Webapp:
+                <ul>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib-example/0.2_jsf-1.2-spring-2/facelets-taglib-example-0.2_jsf-1.2-spring-2-sources.jar">
+                            facelets-taglib-example-0.2_jsf-1.2-spring-2-sources.jar
                         </a>
                     </li>
                 </ul>
             </subsection>
 
-            <subsection name="Manual Download JSF 2.0">
+            <subsection name="Manual Download for JSF 1.2 (Facelets) and Spring 3 / Spring-Security 3">
+                Code:
+
+                <ul>
+
+
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-1.2-spring-3/facelets-taglib-0.2_jsf-1.2-spring-3.jar">
+                            facelets-taglib-0.2_jsf-1.2-spring-3.jar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-1.2-spring-3/facelets-taglib-0.2_jsf-1.2-spring-3-sources.jar">
+                            facelets-taglib-0.2_jsf-1.2-spring-3-sources.jar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-1.2-spring-3/facelets-taglib-0.2_jsf-1.2-spring-3-javadoc.jar">
+                            facelets-taglib-0.2_jsf-1.2-spring-3-javadoc.jar
+                        </a>
+                    </li>
+                </ul>
+                Example Webapp:
                 <ul>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1_jsf20/facelets-taglib-0.1_jsf20.jar">
-                            facelets-taglib-0.1_jsf20.jar
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib-example/0.2_jsf-1.2-spring-3/facelets-taglib-example-0.2_jsf-1.2-spring-3-sources.jar">
+                            facelets-taglib-example-0.2_jsf-1.2-spring-3-sources.jar
+                        </a>
+                    </li>
+                </ul>
+            </subsection>
+
+            <subsection name="Manual Download for JSF 2.0 (Facelets already included) and Spring 2 / Spring-Security 2">
+                Code:
+
+                <ul>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-2.0_spring-2/facelets-taglib-0.2_jsf-2.0_spring-2.jar">
+                            facelets-taglib-0.2_jsf-2.0_spring-2.jar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-2.0_spring-2/facelets-taglib-0.2_jsf-2.0_spring-2-sources.jar">
+                            facelets-taglib-0.2_jsf-2.0_spring-2-sources.jar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-2.0_spring-2/facelets-taglib-0.2_jsf-2.0_spring-2-javadoc.jar">
+                            facelets-taglib-0.2_jsf-2.0_spring-2-javadoc.jar
                         </a>
                     </li>
 
+
+                </ul>
+                Example Webapp:
+                <ul>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1_jsf20/facelets-taglib-0.1_jsf20.pom">
-                            facelets-taglib-0.1_jsf20.pom
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib-example/0.2_jsf-2.0_spring-2/facelets-taglib-example-0.2_jsf-2.0_spring-2-sources.jar">
+                            facelets-taglib-example-0.2_jsf-2.0_spring-2-sources.jar
+                        </a>
+                    </li>
+                </ul>
+            </subsection>
+
+
+            <subsection name="Manual Download for JSF 1.2 (Facelets already included) and Spring 3 / Spring-Security 3">
+                Code:
+                <ul>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-2.0_spring-3/facelets-taglib-0.2_jsf-2.0_spring-3.jar">
+                            facelets-taglib-0.2_jsf-2.0_spring-3.jar
                         </a>
                     </li>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1_jsf20/facelets-taglib-0.1_jsf20-sources.jar">
-                            facelets-taglib-0.1_jsf20-sources.jar
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-2.0_spring-3/facelets-taglib-0.2_jsf-2.0_spring-3-sources.jar">
+                            facelets-taglib-0.2_jsf-2.0_spring-3-sources.jar
                         </a>
                     </li>
                     <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib/0.1_jsf20/facelets-taglib-0.1_jsf20-javadoc.jar">
-                            facelets-taglib-0.1_jsf20-javadoc.jar
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib/0.2_jsf-2.0_spring-3/facelets-taglib-0.2_jsf-2.0_spring-3-javadoc.jar">
+                            facelets-taglib-0.2_jsf-2.0_spring-3-javadoc.jar
                         </a>
                     </li>
+
+                </ul>
+
+                Example Webapp:
+                <ul>
+                    <li>
+                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo//org/springframework/security/facelets-taglib-example/0.2_jsf-2.0_spring-3/facelets-taglib-example-0.2_jsf-2.0_spring-3-sources.jar">
+                            facelets-taglib-example-0.2_jsf-2.0_spring-3-sources.jar
+                        </a>
+                    </li>
+
                 </ul>
             </subsection>
 
@@ -119,66 +207,80 @@
                 In the meantime, you can use our repository at google-code
             </subsection>
 
-            <subsection name="Integrate into maven JSF 1.2">
-                To use the package now, you'll have to add another repository to your pom
-                <pre>
-                    &lt;repositories&gt;
-                    ...
+            <subsection name="Maven 2 Integration: Repository">
+                Add this code snippet to your &lt;repositories&gt; section in either pom.xml or settings.xml:
+                <pre xml:space="preserve">
                     &lt;repository&gt;
                     &lt;id&gt;org.springframework.security.taglibs.facelets&lt;/id&gt;
                     &lt;url&gt;http://spring-security-facelets-taglib.googlecode.com/svn/repo/&lt;/url&gt;
-
                     &lt;/repository&gt;
-                    ...
+                </pre>
+            </subsection>
 
-                    &lt;/repositories&gt;
-
-                    &lt;dependencies&gt;
-                    ....
+            <subsection name="Maven 2 Integration: JSF 1.2 and Spring 2 / Spring-Security 2">
+                Add this code to the &lt;dependencies&gt; section of your pom.xml
+                <pre xml:space="preserve">
                     &lt;dependency&gt;
                     &lt;groupId&gt;
 
                     org.springframework.security
                     &lt;groupId&gt;
                     &lt;artifactId&gt;facelets-taglib&lt;/artifactId&gt;
-                    &lt;version&gt;0.1&lt;/version&gt;
+                    &lt;version&gt;
+                    0.2_jsf-1.2-spring-2
+                    &lt;/version&gt;
                     &lt;/dependency&gt;
-
-                    ....
-                    &lt;/dependencies&gt;
                 </pre>
             </subsection>
 
-            <subsection name="Integrate into maven JSF 2.0">
-                To use the package now, you'll have to add another repository to your pom
-                <pre>
-                    &lt;repositories&gt;
-                    ...
-                    &lt;repository&gt;
-                    &lt;id&gt;org.springframework.security.taglibs.facelets&lt;/id&gt;
-                    &lt;url&gt;http://spring-security-facelets-taglib.googlecode.com/svn/repo/&lt;/url&gt;
-
-                    &lt;/repository&gt;
-                    ...
-
-                    &lt;/repositories&gt;
-
-                    &lt;dependencies&gt;
-                    ....
+            <subsection name="Maven 2 Integration: JSF 1.2 and Spring 3 / Spring-Security 3">
+                Add this code to the &lt;dependencies&gt; section of your pom.xml
+                <pre xml:space="preserve">
                     &lt;dependency&gt;
                     &lt;groupId&gt;
 
                     org.springframework.security
                     &lt;groupId&gt;
                     &lt;artifactId&gt;facelets-taglib&lt;/artifactId&gt;
-                    &lt;version&gt;0.1_jsf20&lt;/version&gt;
+                    &lt;version&gt;
+                    0.2_jsf-1.2-spring-3
+                    &lt;/version&gt;
                     &lt;/dependency&gt;
-
-                    ....
-                    &lt;/dependencies&gt;
                 </pre>
             </subsection>
 
+
+            <subsection name="Maven 2 Integration: JSF 2.0 and Spring 2 / Spring-Security 2">
+                Add this code to the &lt;dependencies&gt; section of your pom.xml
+                <pre xml:space="preserve">
+                    &lt;dependency&gt;
+                    &lt;groupId&gt;
+
+                    org.springframework.security
+                    &lt;groupId&gt;
+                    &lt;artifactId&gt;facelets-taglib&lt;/artifactId&gt;
+                    &lt;version&gt;
+                    0.2_jsf-2.0-spring-2
+                    &lt;/version&gt;
+                    &lt;/dependency&gt;
+                </pre>
+            </subsection>
+
+            <subsection name="Maven 2 Integration: JSF 2.0 and Spring 3 / Spring-Security 3">
+                Add this code to the &lt;dependencies&gt; section of your pom.xml
+                <pre xml:space="preserve">
+                    &lt;dependency&gt;
+                    &lt;groupId&gt;
+
+                    org.springframework.security
+                    &lt;groupId&gt;
+                    &lt;artifactId&gt;facelets-taglib&lt;/artifactId&gt;
+                    &lt;version&gt;
+                    0.2_jsf-2.0-spring-3
+                    &lt;/version&gt;
+                    &lt;/dependency&gt;
+                </pre>
+            </subsection>
 
             <subsection name="Example">
                 Just configure your spring-security app the normal way, add
@@ -188,50 +290,8 @@
                 to the &lt;html&gt;-tag of your .xhtml file... ah I'm too lazy to type this all in,
                 just look at the
                 <a href="./sec_example.xhtml.txt">Spring-Security + Facelets Example</a>
-            </subsection>
-
-            <subsection name="Example WebApp JSF 1.2">
-                Because some of you asked, I've created a small basic webapp, showing you how to use the taglib.
-
-                <ul>
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib-example/0.1/facelets-taglib-example-0.1.war">
-                            facelets-taglib-example-0.1.war (6MB)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib-example/0.1/facelets-taglib-example-0.1-sources.jar">
-                            facelets-taglib-example-0.1-sources.jar (0.5KB)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib-example/0.1/facelets-taglib-example-0.1.pom">
-                            facelets-taglib-example-0.1.pom
-                        </a>
-                    </li>
-                </ul>
-
-            </subsection>
-
-            <subsection name="Example WebApp JSF 2.0">
-                I've updated the example webapp to jsf 2.0
-                <ul>
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib-example/0.1_jsf20/facelets-taglib-example-0.1_jsf20.war">
-                            facelets-taglib-example-0.1_jsf20.war (6MB)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib-example/0.1_jsf20/facelets-taglib-example-0.1_jsf20-sources.jar">
-                            facelets-taglib-example-0.1_jsf20-sources.jar (0.5KB)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://spring-security-facelets-taglib.googlecode.com/svn/repo/org/springframework/security/facelets-taglib-example/0.1_jsf20/facelets-taglib-example-0.1_jsf20.pom">
-                            facelets-taglib-example-0.1_jsf20.pom
-                        </a>
-                    </li>
-                </ul>
+                and take a look at the provided
+                example webapps (see above)
             </subsection>
 
 
@@ -255,7 +315,7 @@
                 <br/>
                 <a href="http://kreta-tauchen.com" target="_blank" lang="de">Tauchen in Kreta</a>
                 <br/>
-                <a href="http://www.lyrix.at" target="_blank">Songtexte</a>
+                <a href="http://lyrix.at" target="_blank">Songtexte</a>
                 <br/>
 
                 <a href="http://www.jsug.at" target="_blank">Java Student User Group</a>
