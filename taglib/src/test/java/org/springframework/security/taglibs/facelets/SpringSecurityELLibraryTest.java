@@ -1,14 +1,13 @@
 package org.springframework.security.taglibs.facelets;
 
-
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.authority.GrantedAuthorityImpl;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
+import org.springframework.security.context.SecurityContextHolder;
+import org.springframework.security.context.SecurityContext;
+import org.springframework.security.Authentication;
+import org.springframework.security.GrantedAuthority;
+import org.springframework.security.GrantedAuthorityImpl;
+import org.springframework.security.adapters.PrincipalSpringSecurityUserToken;
+import org.springframework.security.util.AuthorityUtils;
+import org.springframework.security.userdetails.User;
 
 import static org.mockito.Mockito.*;
 
@@ -47,7 +46,7 @@ public class SpringSecurityELLibraryTest {
 				/* credentialsNonExpired */ true,
 				/* accountNonLocked */ true,
 				new GrantedAuthority[]{ROLE_ADMIN, ROLE_USER});
-		Authentication auth = new PreAuthenticatedAuthenticationToken(principal, new Object(), AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_ADMIN,ROLE_USER"));
+		Authentication auth = new PrincipalSpringSecurityUserToken("someKey", "username", "password", AuthorityUtils.commaSeparatedStringToAuthorityArray("ROLE_ADMIN,ROLE_USER"), principal);
 
 		when(context.getAuthentication()).thenReturn(auth);
 	}
