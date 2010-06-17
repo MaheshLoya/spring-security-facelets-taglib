@@ -13,6 +13,7 @@
 <body>
 blablabla all too amazying example
 
+A more complex example is provided in the examples in the svn repository. please take a look there
 
         sec:ifAnyGranted("ROLE_USER,ROLE_ADMIN"): ? #{sec:ifAnyGranted("ROLE_USER,ROLE_ADMIN")} <br/>
         !sec:ifAnyGranted("ROLE_USER,ROLE_ADMIN"): ? #{! sec:ifAnyGranted("ROLE_USER,ROLE_ADMIN")} <br/>
