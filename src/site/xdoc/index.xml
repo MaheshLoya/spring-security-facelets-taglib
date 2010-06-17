@@ -14,6 +14,11 @@
 
             <subsection name="Latest news">
                 <ul>
+                    <li>2010-06-17<br/>
+                        A new Version 0.4 was just put into SVN for testing. Please try it out, so we can release it as stable.
+                        Any feedback &amp;/ additional testcases would be greatly appreciated!
+                    </li>
+
                     <li>2009-09-08
                         <br/>
                         We now have our own
@@ -69,7 +74,7 @@
             </subsection>
 
 
-            <subsection name="Manual Download for JSF 1.2 (Facelets) and Spring 2 / Spring-Security 2">
+            <subsection name="Outdated: Manual Download for JSF 1.2 (Facelets) and Spring 2 / Spring-Security 2">
                 Code:
 
                 <ul>
@@ -99,7 +104,7 @@
                 </ul>
             </subsection>
 
-            <subsection name="Manual Download for JSF 1.2 (Facelets) and Spring 3 / Spring-Security 3">
+            <subsection name="Outdated: Manual Download for JSF 1.2 (Facelets) and Spring 3 / Spring-Security 3">
                 Code:
 
                 <ul>
@@ -131,7 +136,7 @@
                 </ul>
             </subsection>
 
-            <subsection name="Manual Download for JSF 2.0 (Facelets already included) and Spring 2 / Spring-Security 2">
+            <subsection name="Outdated: Manual Download for JSF 2.0 (Facelets already included) and Spring 2 / Spring-Security 2">
                 Code:
 
                 <ul>
@@ -164,7 +169,7 @@
             </subsection>
 
 
-            <subsection name="Manual Download for JSF 1.2 (Facelets already included) and Spring 3 / Spring-Security 3">
+            <subsection name="Outdated: Manual Download for JSF 1.2 (Facelets already included) and Spring 3 / Spring-Security 3">
                 Code:
                 <ul>
                     <li>
@@ -217,7 +222,7 @@
                 </pre>
             </subsection>
 
-            <subsection name="Maven 2 Integration: JSF 1.2 and Spring 2 / Spring-Security 2">
+            <subsection name="Outdated: Maven 2 Integration: JSF 1.2 and Spring 2 / Spring-Security 2">
                 Add this code to the &lt;dependencies&gt; section of your pom.xml
                 <pre xml:space="preserve">
                     &lt;dependency&gt;
@@ -233,7 +238,7 @@
                 </pre>
             </subsection>
 
-            <subsection name="Maven 2 Integration: JSF 1.2 and Spring 3 / Spring-Security 3">
+            <subsection name="Outdated: Maven 2 Integration: JSF 1.2 and Spring 3 / Spring-Security 3">
                 Add this code to the &lt;dependencies&gt; section of your pom.xml
                 <pre xml:space="preserve">
                     &lt;dependency&gt;
@@ -250,7 +255,7 @@
             </subsection>
 
 
-            <subsection name="Maven 2 Integration: JSF 2.0 and Spring 2 / Spring-Security 2">
+            <subsection name="Outdated: Maven 2 Integration: JSF 2.0 and Spring 2 / Spring-Security 2">
                 Add this code to the &lt;dependencies&gt; section of your pom.xml
                 <pre xml:space="preserve">
                     &lt;dependency&gt;
@@ -266,7 +271,7 @@
                 </pre>
             </subsection>
 
-            <subsection name="Maven 2 Integration: JSF 2.0 and Spring 3 / Spring-Security 3">
+            <subsection name="Outdated: Maven 2 Integration: JSF 2.0 and Spring 3 / Spring-Security 3">
                 Add this code to the &lt;dependencies&gt; section of your pom.xml
                 <pre xml:space="preserve">
                     &lt;dependency&gt;
