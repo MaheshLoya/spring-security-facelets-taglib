@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>facelets-taglib-parent</artifactId>
+        <relativePath>../pom.xml</relativePath>
+        <version>0.5</version>
+    </parent>
+
+    <artifactId>facelets-taglib-example-jsf12-spring2</artifactId>
+    <packaging>war</packaging>
+
+
+    <name>Example Webapp JSF 1.2 + Spring 2</name>
+    <url>http://www.dominikdorn.com/facelets/</url>
+    <dependencies>
+
+        <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>com.springsource.javax.servlet</artifactId>
+          <version>${servletapi-version}</version>
+          <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+          <groupId>javax.el</groupId>
+          <artifactId>com.springsource.javax.el</artifactId>
+          <version>2.1.0</version>
+          <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>com.springsource.javax.servlet.jsp.jstl</artifactId>
+          <version>${jstl-version}</version>
+          <scope>runtime</scope>
+        </dependency>
+
+        <dependency>  
+          <groupId>com.sun.facelets</groupId>
+          <artifactId>com.springsource.com.sun.facelets</artifactId>
+          <version>${facelets-version}</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>org.apache.myfaces</groupId>
+          <artifactId>com.springsource.org.apache.myfaces</artifactId>
+          <version>1.2.2</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>com.springsource.org.apache.commons.logging</artifactId>
+          <version>${commons-logging-version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>com.springsource.org.apache.commons.el</artifactId>
+          <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>org.springframework.security.core</artifactId>
+          <version>${spring-security-2-version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>org.springframework.jdbc</artifactId>
+          <version>${spring-2-version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>org.springframework.context</artifactId>
+          <version>${spring-2-version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>org.springframework.web</artifactId>
+          <version>${spring-2-version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.apache.log4j</groupId>
+          <artifactId>com.springsource.org.apache.log4j</artifactId>
+          <version>1.2.15</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>facelets-taglib-jsf12-spring-2</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>org.osgi.core</artifactId>
+          <version>1.0.0</version>
+        </dependency>
+        
+    </dependencies>
+
+    <build>
+        <plugins>
+            
+            <!-- Based on http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html -->
+            <plugin>
+              <artifactId>maven-jar-plugin</artifactId>
+              <configuration>
+                <archive>  
+                  <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                </archive> 
+              </configuration>
+            </plugin>  
+            <plugin>
+               <groupId>org.apache.felix</groupId>
+               <artifactId>maven-bundle-plugin</artifactId>
+               <extensions>true</extensions>
+               <configuration>
+                  <supportedProjectTypes>
+                      <supportedProjectType>war</supportedProjectType>
+                  </supportedProjectTypes>
+               </configuration>
+               <executions>
+                  <execution>
+                    <id>bundle-manifest</id>
+                    <phase>process-classes</phase>
+                    <goals>    
+                      <goal>manifest</goal>
+                    </goals>   
+                  </execution>
+               </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>7.0.1.v20091125</version>
+                <configuration>
+                    <scanIntervalSeconds>20</scanIntervalSeconds>
+                    <stopPort>9966</stopPort>
+                    <stopKey>foo</stopKey>
+                    <connectors>
+                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                            <host>127.0.0.1</host>
+                            <port>9080</port>
+                            <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>start-jetty</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <daemon>true</daemon>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>stop-jetty</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>stop</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>selenium-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>start-server</goal>
+                        </goals>
+                        <configuration>
+                            <background>true</background>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- Skip the normal tests, we'll run them in the integration-test phase -->
+                    <skip>true</skip>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <skip>false</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
